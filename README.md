@@ -2,6 +2,8 @@
 
 Vibe Calendar is a simple React-based calendar app built to help track and visualize university deadlines, tasks, and events in a clear and aesthetic way.
 
+![Main Page](main-page.png)
+
 ## Configuration
 
 The events displayed on the calendar are configured through a JSON file named `events.json`. You need to edit this file to add, modify, or remove events from your calendar.
