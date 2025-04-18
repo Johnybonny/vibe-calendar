@@ -1,26 +1,20 @@
 [
     {
-        "id": 1,
-        "title": "Meeting with Team",
-        "date": "2025-04-20",
-        "time": "10:00",
-        "description": "Discuss project updates",
-        "color": "#ff5722"
+        "title": "Active listening prezentacja",
+        "date": "2025-04-23",
+        "active": true,
+        "color": "#ffd166"
     },
     {
-        "id": 2,
-        "title": "Doctor Appointment",
-        "date": "2025-04-22",
-        "time": "15:00",
-        "description": "",
-        "color": "#4caf50"
+        "title": "WDW zadanie",
+        "date": "2025-04-23",
+        "active": true,
+        "color": "#ef476f"
     },
     {
-        "id": 3,
-        "title": "Doctor Appointment",
-        "date": "2025-05-22",
-        "time": "15:00",
-        "description": "",
-        "color": "#4caf50"
+        "title": "Bioinformatyka zadanie",
+        "date": "2025-04-24",
+        "active": true,
+        "color": "#06d6a0"
     }
 ]

@@ -1,44 +1,38 @@
 import React from 'react';
 import '../Calendar.css';
 
-const Calendar = ({ events }) => {
-  const today = new Date();
-  const month = today.getMonth();
-  const year = today.getFullYear();
-
+const Calendar = ({ events, year, month }) => {
   const firstDayOfMonth = new Date(year, month, 1);
   const startingDay = firstDayOfMonth.getDay();
   const daysInMonth = new Date(year, month + 1, 0).getDate();
 
   const cells = [];
-  for (let i = 0; i < startingDay; i++) {
-    cells.push(null);
-  }
-  for (let day = 1; day <= daysInMonth; day++) {
-    cells.push(day);
-  }
+  for (let i = 0; i < startingDay; i++) cells.push(null);
+  for (let d = 1; d <= daysInMonth; d++) cells.push(d);
 
   return (
     <div className="calendar">
-      <h2>{today.toLocaleString('default', { month: 'long' })} {year}</h2>
+      <h3 className="month-title">
+        {firstDayOfMonth.toLocaleString('default', { month: 'long' })} {year}
+      </h3>
       <div className="calendar-grid">
-        {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(d => (
+        {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].map(d => (
           <div key={d} className="day-header">{d}</div>
         ))}
         {cells.map((day, idx) => {
-          const cellDate = day ? `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}` : null;
-          const dayEvents = events.filter(e => e.date === cellDate);
+          const dateStr = day
+            ? `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`
+            : null;
+          const dayEvents = events.filter(e => e.date === dateStr);
           return (
             <div key={idx} className="calendar-cell">
               {day && <div className="date-number">{day}</div>}
               {dayEvents.map(ev => (
                 <div
-                  key={ev.id}
-                  className="event"
-                  style={{ backgroundColor: ev.color }}
-                  title={ev.description}
+                  className={`event${ev.active === false ? ' inactive' : ''}`}
+                  style={{ backgroundColor: ev.active === false ? undefined : ev.color }}
                 >
-                  <strong>{ev.time}</strong> {ev.title}
+                  <span className="event-title">{ev.title}</span>
                 </div>
               ))}
             </div>
