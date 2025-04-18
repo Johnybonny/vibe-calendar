@@ -2,6 +2,8 @@
 
 Vibe Calendar is a simple React-based calendar app built to help track and visualize university deadlines, tasks, and events in a clear and aesthetic way.
 
+https://vibe-calendar-ahgtu.ondigitalocean.app/
+
 ![Main Page](main-page.png)
 
 ## Configuration
