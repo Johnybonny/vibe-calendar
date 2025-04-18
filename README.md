@@ -1,12 +1,20 @@
-# React + Vite
+# Vibe Calendar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Vibe Calendar is a simple React-based calendar app built to help track and visualize university deadlines, tasks, and events in a clear and aesthetic way.
 
-Currently, two official plugins are available:
+## Configuration
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The events displayed on the calendar are configured through a JSON file named `events.json`. You need to edit this file to add, modify, or remove events from your calendar.
 
-## Expanding the ESLint configuration
+### `events.json` Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The `events.json` file should contain a JSON array of event objects. Each event object defines a single event to be displayed on the calendar. Here's the structure of an event object:
+
+```json
+{
+    "title": "Event Title",
+    "date": "YYYY-MM-DD",
+    "active": true,
+    "color": "#HEX_COLOR_CODE"
+}
+```
