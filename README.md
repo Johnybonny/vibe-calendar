@@ -1,4 +1,4 @@
-# Vibe Calendar
+# <img src="public/vibe.svg" width="24"> Vibe Calendar
 
 Vibe Calendar is a simple React-based calendar app built to help track and visualize university deadlines, tasks, and events in a clear and aesthetic way.
 
