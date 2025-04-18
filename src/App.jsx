@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import events from './events.json';
+import events from './../events.json';
 import Calendar from './components/Calendar';
 import './App.css';
 
