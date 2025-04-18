@@ -16,5 +16,11 @@
         "date": "2025-04-24",
         "active": true,
         "color": "#06d6a0"
+    },
+    {
+        "title": "Laby z cybersecurity",
+        "date": "2025-05-15",
+        "active": true,
+        "color": "#ef476f"
     }
 ]
