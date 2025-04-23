@@ -2,13 +2,13 @@
     {
         "title": "Active listening prezentacja",
         "date": "2025-04-23",
-        "active": true,
+        "active": false,
         "color": "#ffd166"
     },
     {
         "title": "WDW zadanie",
         "date": "2025-04-23",
-        "active": true,
+        "active": false,
         "color": "#ef476f"
     },
     {
@@ -58,5 +58,11 @@
         "date": "2025-05-15",
         "active": true,
         "color": "#42f590"
+    },
+    {
+        "title": "Angielski test",
+        "date": "2025-05-07",
+        "active": true,
+        "color": "#ffd166"
     }
 ]
