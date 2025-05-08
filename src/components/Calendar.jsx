@@ -2,8 +2,12 @@ import React from 'react';
 import '../Calendar.css';
 
 const Calendar = ({ events, year, month }) => {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  // Compute first day and adjust so Monday = 0, ..., Sunday = 6
   const firstDayOfMonth = new Date(year, month, 1);
-  const startingDay = firstDayOfMonth.getDay();
+  const startingDay = (firstDayOfMonth.getDay() + 6) % 7;
   const daysInMonth = new Date(year, month + 1, 0).getDate();
 
   const cells = [];
@@ -27,14 +31,19 @@ const Calendar = ({ events, year, month }) => {
           return (
             <div key={idx} className="calendar-cell">
               {day && <div className="date-number">{day}</div>}
-              {dayEvents.map(ev => (
-                <div
-                  className={`event${ev.active === false ? ' inactive' : ''}`}
-                  style={{ backgroundColor: ev.active === false ? undefined : ev.color }}
-                >
-                  <span className="event-title">{ev.title}</span>
-                </div>
-              ))}
+              {dayEvents.map(ev => {
+                const eventDate = new Date(ev.date);
+                const isActive = eventDate >= today;
+                return (
+                  <div
+                    key={ev.title + ev.date}
+                    className={`event${!isActive ? ' inactive' : ''}`}
+                    style={isActive ? { backgroundColor: ev.color } : undefined}
+                  >
+                    <span className="event-title">{ev.title}</span>
+                  </div>
+                );
+              })}
             </div>
           );
         })}

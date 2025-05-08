@@ -2,67 +2,66 @@
     {
         "title": "Active listening prezentacja",
         "date": "2025-04-23",
-        "active": false,
         "color": "#ffd166"
     },
     {
         "title": "WDW zadanie",
         "date": "2025-04-23",
-        "active": false,
         "color": "#ef476f"
     },
     {
         "title": "Bioinformatyka zadanie",
         "date": "2025-04-24",
-        "active": true,
         "color": "#06d6a0"
     },
     {
         "title": "Laby z cybersecurity",
         "date": "2025-05-15",
-        "active": true,
         "color": "#42eff5"
     },
     {
         "title": "Seminarium - druga prezka",
         "date": "2025-05-07",
-        "active": true,
         "color": "#ef476f"
     },
     {
         "title": "Bioinformatyka zadanie",
         "date": "2025-05-08",
-        "active": true,
         "color": "#06d6a0"
     },
     {
         "title": "Bioinformatyka zadanie",
         "date": "2025-05-22",
-        "active": true,
         "color": "#06d6a0"
     },
     {
         "title": "Laby z cybersecurity",
         "date": "2025-06-12",
-        "active": true,
         "color": "#42eff5"
     },
     {
         "title": "IoT - zaliczenie wykładu",
         "date": "2025-06-12",
-        "active": true,
         "color": "#42f590"
     },
     {
         "title": "IoT - przygotownanie artykułu + pytań",
         "date": "2025-05-15",
-        "active": true,
         "color": "#42f590"
     },
     {
         "title": "Angielski test",
-        "date": "2025-05-15",
-        "active": true,
+        "date": "2025-05-07",
         "color": "#ffd166"
+    },
+    {
+        "title": "WDW zadanie 2",
+        "date": "2025-05-25",
+        "color": "#ef476f"
+    },
+    {
+        "title": "TUM do obejrzenia wykłady 3, 4",
+        "date": "2025-05-08",
+        "color": "#ef476f"
     }
 ]
