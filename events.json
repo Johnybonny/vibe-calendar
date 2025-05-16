@@ -30,16 +30,6 @@
         "color": "#06d6a0"
     },
     {
-        "title": "Bioinformatyka zadanie",
-        "date": "2025-05-22",
-        "color": "#06d6a0"
-    },
-    {
-        "title": "Laby z cybersecurity",
-        "date": "2025-06-12",
-        "color": "#42eff5"
-    },
-    {
         "title": "IoT - przygotownanie artykułu + pytań",
         "date": "2025-05-15",
         "color": "#42f590"
@@ -50,13 +40,28 @@
         "color": "#ffd166"
     },
     {
+        "title": "TUM do obejrzenia wykłady 3, 4",
+        "date": "2025-05-08",
+        "color": "#ef476f"
+    },
+    {
+        "title": "Laby z cybersecurity (pan Patryk)",
+        "date": "2025-05-22",
+        "color": "#42eff5" 
+    },
+    {
         "title": "WDW zadanie 2",
         "date": "2025-05-25",
         "color": "#ef476f"
     },
     {
-        "title": "TUM do obejrzenia wykłady 3, 4",
-        "date": "2025-05-08",
+        "title": "Laby z cybersecurity (ostatnie)",
+        "date": "2025-06-12",
+        "color": "#42eff5"
+    },
+    {
+        "title": "TUM zaliczenie",
+        "date": "2025-06-12",
         "color": "#ef476f"
-    }
+    },
 ]
